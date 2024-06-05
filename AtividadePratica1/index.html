@@ -1,0 +1,38 @@
+<!--
+    Curso de Engenharia de Software - UniENVAGELICA
+    Disciplina de Progamação Web
+    Dev: Felipe Fernandes - 2120954
+    Data: 16/05/2024
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para Contato / SAC </title>
+    <!-- Incluindo o Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-md mx-auto bg-white p-8 rounded shadow-md">
+        <h2 class="text-2xl font-semibold mb-4">Formulário para Contato</h2>
+        <form>
+            <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-semibold mb-2">Nome:</label>
+                <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" placeholder="Seu nome">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-semibold mb-2">E-mail:</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" placeholder="Seu e-mail">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-semibold mb-2">Mensagem:</label>
+                <textarea id="message" name="message" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500" rows="4" placeholder="Sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
